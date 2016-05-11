@@ -1,0 +1,18 @@
+{
+    "name": "arkhas/calendar",
+    "description": "A calendar package for laravel 5",
+    "authors": [
+        {
+            "name": "Arkh4s",
+            "email": "pub@arkhas.fr"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "post-update-cmd": [
+        	"php artisan vendor:publish",
+            "php artisan optimize"
+        ]
+    }
+
+}
