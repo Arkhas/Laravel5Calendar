@@ -1,13 +1,18 @@
 {
     "name": "arkhas/calendar",
-    "description": "A calendar package for laravel 5",
+    "description": "A calendar package for laravel 5 using Carbon",
+    "keywords": ["laravel 5","calendar", "carbon"],
+    "homepage": "https://github.com/Arkhas/Calendar",
+    "license": "MIT",
     "authors": [
         {
             "name": "Arkh4s",
             "email": "pub@arkhas.fr"
         }
     ],
-    "require": {},
+    "require": {
+    	"php": ">=5.5.9"
+    	},
     "scripts": {
         "post-update-cmd": [
         	"php artisan vendor:publish",
