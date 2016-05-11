@@ -25,9 +25,7 @@ And finally add a new line to the `aliases` array:
 
 Now you're ready to start using the calendar package in your application.
 
-if you want to use a custom template, run :
-	
-	php artisan vendor:publish
+I
 
 ## Usage
 
@@ -63,6 +61,10 @@ Calendar::generate(2016, 5, $event, $data);
 ```
 
 ## Template
+
+f you want to use a custom template, run :
+	
+	php artisan vendor:publish
 
 The template is located in `resources/views/arkhas/calendar/calendar.blade.php`
 
