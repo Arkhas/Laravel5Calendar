@@ -1,1 +1,68 @@
-# Calendar
+## Installation
+
+Install the package through [Composer](http://getcomposer.org/). Edit your project's `composer.json` file by adding:
+
+```php
+"require": {
+	"laravel/framework": "5.2.*",
+	"arkhas/calendar": "dev-master"
+}
+```
+
+Next, run the Composer update command from the Terminal:
+
+    composer update
+
+Now all you have to do is add the service provider of the package and alias the package. To do this open your `app/config/app.php` file.
+
+Add a new line to the `service providers` array:
+
+	Arkhas\Calendar\CalendarServiceProvider::class,
+
+And finally add a new line to the `aliases` array:
+
+	'Calendar' => Arkhas\Calendar\Facades\Calendar::class
+
+Now you're ready to start using the calendar package in your application.
+
+if you want to use a custom template, run :
+	
+	php artisan vendor:publish
+
+## Usage
+
+You can use the `generate` method to generate a calendar.
+
+```php
+// Generate a calendar for the current month and year
+Calendar::generate();
+
+// Generate a calendar for the specified year and month
+Calendar::generate(2012, 6);
+
+// Add an array of events as the third parameter to add them to the calendar, 
+$event = array(
+	'2016/5/3',
+	'2016/5/5',
+	'2016/5/11',
+	'2016/5/16',
+	'2016/5/28',
+
+);
+
+Calendar::generate(2016, 5, $event);
+
+// Add an array of data as the fourth parameter so you can use them in the view
+
+$data = array(
+	'name' => 'Arkhas',
+	'url'  =>  '/event/arkhas'
+);
+```
+
+## Template
+
+The template is located in `resources/views/arkhas/calendar/calendar.blade.php`
+the css file is located in `public/assets/arkhas/calendar/calendar.css`
+
+
