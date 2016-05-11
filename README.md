@@ -38,16 +38,15 @@ You can use the `generate` method to generate a calendar.
 Calendar::generate();
 
 // Generate a calendar for the specified year and month
-Calendar::generate(2012, 6);
+Calendar::generate(2012, 5);
 
-// Add an array of events as the third parameter to add them to the calendar, 
+// Add an array of events as the third parameter to add them to the calendar (YYYY/MM/DD), 
 $event = array(
 	'2016/5/3',
 	'2016/5/5',
 	'2016/5/11',
 	'2016/5/16',
 	'2016/5/28',
-
 );
 
 Calendar::generate(2016, 5, $event);
@@ -56,8 +55,11 @@ Calendar::generate(2016, 5, $event);
 
 $data = array(
 	'name' => 'Arkhas',
-	'url'  =>  '/event/arkhas'
+	'url'  =>  '/event/arkhas',
+	'foo' => 'bar'
 );
+
+Calendar::generate(2016, 5, $event, $data);
 ```
 
 ## Template
