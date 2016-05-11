@@ -63,6 +63,7 @@ $data = array(
 ## Template
 
 The template is located in `resources/views/arkhas/calendar/calendar.blade.php`
+
 the css file is located in `public/assets/arkhas/calendar/calendar.css`
 
 
