@@ -1,17 +1,10 @@
 ## Installation
 
-Install the package through [Composer](http://getcomposer.org/). Edit your project's `composer.json` file by adding:
+Install the package through [Composer](http://getcomposer.org/) :
 
-```php
-"require": {
-	"laravel/framework": "5.2.*",
-	"arkhas/calendar": "dev-master"
-}
-```
+	composer require arkhas/calendar:dev-master
 
-Next, run the Composer update command from the Terminal:
 
-    composer update
 
 Now all you have to do is add the service provider of the package and alias the package. To do this open your `app/config/app.php` file.
 
@@ -48,7 +41,7 @@ $calendar = Calendar::generate();
 $calendar = Calendar::generate(2012, 5);
 
 // Add an array of events as the third parameter to add them to the calendar (YYYY/MM/DD), 
-$event = array(
+$events = array(
 	'2016/5/3',
 	'2016/5/5',
 	'2016/5/11',
@@ -56,7 +49,7 @@ $event = array(
 	'2016/5/28',
 );
 
-$calendar = Calendar::generate(2016, 5, $event);
+$calendar = Calendar::generate(2016, 5, $events);
 
 // Add an array of data as the fourth parameter so you can use them in the view :
 
@@ -66,7 +59,7 @@ $data = array(
 	'foo' => 'bar'
 );
 
-$calendar = Calendar::generate(2016, 5, $event, $data);
+$calendar = Calendar::generate(2016, 5, $events, $data);
 ```
 ## Routing
 

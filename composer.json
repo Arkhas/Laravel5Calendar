@@ -19,6 +19,11 @@
         	"php artisan vendor:publish",
             "php artisan optimize"
         ]
+    },
+    "autoload": {
+        "psr-0": {
+            "Arkhas\\Calendar": "src/"
+        }
     }
 
 }
