@@ -34,5 +34,11 @@ class CalendarServiceProvider extends ServiceProvider
             $request = $app['request'];
             return new Calendar($request);
         });
+        $this->app->register('Arkhas\Calendar\Calendar');
+
+        // $this->app->bind('Arkhas\Calendar\Calendar', function(){
+        //     return new Calendar();
+        // });
+
     }
 }
