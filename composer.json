@@ -23,6 +23,9 @@
     "autoload": {
         "psr-0": {
             "Arkhas\\Calendar": "src/"
+        },
+        "classmap" : {
+        	"src/"
         }
     }
 
