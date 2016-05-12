@@ -21,14 +21,14 @@ Add a new line to the `service providers` array:
 
 And finally add a new line to the `aliases` array:
 
-	'Calendar' => Arkhas\Calendar\Facades\Calendar::class
+	'Calendar' => Arkhas\Calendar\Facades\Calendar::class,
 
 Now you're ready to start using the calendar package in your application.
 
 
 ## Usage
 
-You can use the `generate` method to generate a calendar.
+You can use the `generate` method to generate a calendar, it will return the template of the calendar.
 
 ```php
 // Generate a calendar for the current month and year
@@ -60,10 +60,10 @@ Calendar::generate(2016, 5, $event, $data);
 ```
 ## Routing
 
-By default, the routing is `/calendar/YYYY/MM`, you can change the leading route using the url data parameter
+By default, the routing format is `/calendar/YYYY/MM` , you can change the leading route using the url data parameter
 
 ```php
-	$data['url'] = '/foo/bar/';
+$data['url'] = '/foo/bar/';
 ```
 
 ## Template
