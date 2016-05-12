@@ -72,7 +72,7 @@ If you want to use a custom template, run :
 	
 	php artisan vendor:publish
 
-The template is located in `resources/views/vendor/arkhas/calendar/calendar.blade.php`
+The template is located in `resources/views/vendor/calendar/calendar.blade.php`
 
 the css file is located in `public/assets/arkhas/calendar/calendar.css`
 
