@@ -1,4 +1,3 @@
-
 <table>
 	<header>
 		<a class="btn-prev fontawesome-angle-left" href="{{ $data['url'] }}{{ $calendar['previous_month_url'] }}"></a>
