@@ -25,7 +25,6 @@ And finally add a new line to the `aliases` array:
 
 Now you're ready to start using the calendar package in your application.
 
-I
 
 ## Usage
 
@@ -59,10 +58,17 @@ $data = array(
 
 Calendar::generate(2016, 5, $event, $data);
 ```
+## Routing
+
+By default, the routing is `/calendar/YYYY/MM`, you can change the leading route using the url data parameter
+
+```php
+	$data['url'] = '/foo/bar/';
+```
 
 ## Template
 
-f you want to use a custom template, run :
+If you want to use a custom template, run :
 	
 	php artisan vendor:publish
 

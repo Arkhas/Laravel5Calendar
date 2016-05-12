@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-    	"php": ">=5.5.9"
+    	"php": ">=5.5.9",
+    	"nesbot/carbon": "master-dev"
     	},
     "scripts": {
         "post-update-cmd": [
