@@ -19,9 +19,19 @@ Add a new line to the `service providers` array:
 
 	Arkhas\Calendar\CalendarServiceProvider::class,
 
-And finally add a new line to the `aliases` array:
+Add a new line to the `aliases` array:
 
 	'Calendar' => Arkhas\Calendar\Facades\Calendar::class,
+
+Then insert this in the top of your file :
+
+```php
+use Calendar;
+```
+Or use it directly :
+```php
+$calendar = \Calendar::generate();
+```
 
 Now you're ready to start using the calendar package in your application.
 
@@ -32,10 +42,10 @@ You can use the `generate` method to generate a calendar, it will return the tem
 
 ```php
 // Generate a calendar for the current month and year
-Calendar::generate();
+$calendar = Calendar::generate();
 
 // Generate a calendar for the specified year and month
-Calendar::generate(2012, 5);
+$calendar = Calendar::generate(2012, 5);
 
 // Add an array of events as the third parameter to add them to the calendar (YYYY/MM/DD), 
 $event = array(
@@ -46,9 +56,9 @@ $event = array(
 	'2016/5/28',
 );
 
-Calendar::generate(2016, 5, $event);
+$calendar = Calendar::generate(2016, 5, $event);
 
-// Add an array of data as the fourth parameter so you can use them in the view
+// Add an array of data as the fourth parameter so you can use them in the view :
 
 $data = array(
 	'name' => 'Arkhas',
@@ -56,11 +66,11 @@ $data = array(
 	'foo' => 'bar'
 );
 
-Calendar::generate(2016, 5, $event, $data);
+$calendar = Calendar::generate(2016, 5, $event, $data);
 ```
 ## Routing
 
-By default, the routing format is `/calendar/YYYY/MM` , you can change the leading route using the url data parameter
+By default, the routing format is `/calendar/YYYY/MM` , you can change the leading route using the url data parameter :
 
 ```php
 $data['url'] = '/foo/bar/';
@@ -74,6 +84,6 @@ If you want to use a custom template, run :
 
 The template is located in `resources/views/vendor/calendar/calendar.blade.php`
 
-the css file is located in `public/assets/arkhas/calendar/calendar.css`
+The css file is located in `public/assets/arkhas/calendar/calendar.css`
 
 
