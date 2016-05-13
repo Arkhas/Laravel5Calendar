@@ -1,22 +1,12 @@
 {
     "name": "arkhas/calendar",
-    "description": "A calendar package for laravel 5 using Carbon",
-    "keywords": ["laravel 5","calendar", "carbon"],
-    "homepage": "https://github.com/Arkhas/Calendar",
+    "description": "A calendar package for laravel 5 using Carbon and Blade templating",
     "license": "MIT",
     "authors": [
         {
-            "name": "Arkh4s",
+            "name": "Arkhas",
             "email": "pub@arkhas.fr"
         }
     ],
-    "require": {
-    	},
-    "autoload": {
-        "psr-4": {
-            "Arkhas\\Calendar\\": "src/"
-        }
-        
-    }
-
+    "require": {}
 }
