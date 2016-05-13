@@ -1,5 +1,5 @@
 {
-    "name": "arkhas/calendar",
+    "name": "arkhas/laravel5calendar",
     "description": "A calendar package for laravel 5 using Carbon and Blade templating",
     "license": "MIT",
     "authors": [
