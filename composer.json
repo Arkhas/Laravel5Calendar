@@ -11,8 +11,7 @@
         }
     ],
     "require": {
-    	"php": ">=5.5.9",
-    	"nesbot/carbon": "master-dev"
+    	"php": ">=5.5.9"
     	},
     "scripts": {
         "post-update-cmd": [
@@ -22,11 +21,9 @@
     },
     "autoload": {
         "psr-0": {
-            "Arkhas\\Calendar\\": "src/"
-        },
-        "classmap" : {
-        	"src/"
+            "Arkhas\\Calendar\\": "src"
         }
+        
     }
 
 }
