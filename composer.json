@@ -13,12 +13,6 @@
     "require": {
     	"php": ">=5.5.9"
     	},
-    "scripts": {
-        "post-update-cmd": [
-        	"php artisan vendor:publish",
-            "php artisan optimize"
-        ]
-    },
     "autoload": {
         "psr-4": {
             "Arkhas\\Calendar\\": "src/"
