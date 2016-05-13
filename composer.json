@@ -8,5 +8,10 @@
             "email": "pub@arkhas.fr"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Arkhas\\Calendar\\": "src/"
+        }
+    },
 }
