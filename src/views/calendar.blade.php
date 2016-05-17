@@ -1,9 +1,9 @@
 <div class="calendar">
 	<table>
 		<header>
-			<a class="btn-prev fa-angle-left calendarButton" href="{{ $data['url'] }}{{ $calendar['previous_month_url'] }}"></a>
+			<a class="btn-prev fontawesome-angle-left calendarButton" href="{{ $data['url'] }}{{ $calendar['previous_month_url'] }}"></a>
 			<h2>{{ $calendar['current_month']->format('M Y') }}</h2>
-			<a class="btn-next fa-angle-right calendarButton" href="{{ $data['url'] }}{{ $calendar['next_month_url'] }}"></a>
+			<a class="btn-next fontawesome-angle-right calendarButton" href="{{ $data['url'] }}{{ $calendar['next_month_url'] }}"></a>
 		</header>
 		<tr>
 		@foreach ($calendar['weeks'][0] as $day)

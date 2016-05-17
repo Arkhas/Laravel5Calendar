@@ -2,6 +2,7 @@
 namespace Arkhas\Calendar;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Session;
 
 class Calendar
 {
@@ -26,7 +27,16 @@ class Calendar
 	 * @return	string
 	 */
 	public function generate($year = '', $month = '', $event = array(), $data = array())
-	{
+	{	
+		
+		if (!$event) {
+			$event = session()->get('event');
+		}else{
+			session()->put('event', $event);
+		}
+		
+		
+		
 		$today = Carbon::now();
 		
 		if ($month == '') {

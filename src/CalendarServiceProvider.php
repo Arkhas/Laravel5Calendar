@@ -14,7 +14,7 @@ class CalendarServiceProvider extends ServiceProvider
     public function boot()
     {
         // Get namespace
-        $nameSpace = $this->app->getNamespace();
+        // $nameSpace = $this->app->getNamespace();
 
         $this->loadViewsFrom(__DIR__.'/views', 'calendar');
         $this->publishes([
@@ -38,7 +38,6 @@ class CalendarServiceProvider extends ServiceProvider
         {
             return new Calendar();
         });
-        // $this->app->register('Arkhas\Calendar\CalendarServiceProvider');
     }
 
 }

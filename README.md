@@ -2,8 +2,7 @@
 
 Install the package through [Composer](http://getcomposer.org/) :
 
-	composer require arkhas/laravel5calendar:dev-master
-
+	composer require arkhas/laravel5calendar
 
 
 Now all you have to do is add the service provider of the package and alias the package. To do this open your `app/config/app.php` file.
@@ -84,5 +83,21 @@ If you want to use a custom template, run :
 The template is located in `resources/views/vendor/calendar/calendar.blade.php`
 
 The css file is located in `public/assets/arkhas/calendar/calendar.css`
+
+## Navigate threw the calendar
+
+Add this to your template
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/assets/arkhas/calendar/calendar.js"></script>
+
+```
+
+Navigate threw the calendar with links using the `calendarButton` Class.
+The ajax script will replace the `calendar` class by a new calendar.
+
+For more information about how it work, you can navigate to `/arkhas/demo` and see the template in `ressources/views/vendor/calendar/demo.blade.php`
+
 
 
