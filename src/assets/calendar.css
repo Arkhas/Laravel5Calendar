@@ -8,7 +8,7 @@
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-*[class*="fa-"]:before {
+*[class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
 
@@ -19,10 +19,6 @@
   width: 506px;
   font-family: 'Lato', sans-serif;
   height: 538px;
-  left: 50%;
-  margin: -255px 0 0 -245px;
-  position: absolute;
-  top: 50%;
 }
 .calendar a{
    text-decoration: none;
