@@ -13,9 +13,6 @@ class CalendarServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Get namespace
-        // $nameSpace = $this->app->getNamespace();
-
         $this->loadViewsFrom(__DIR__.'/views', 'calendar');
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/vendor/calendar'),

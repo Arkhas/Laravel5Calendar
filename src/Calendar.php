@@ -28,17 +28,17 @@ class Calendar
 	 */
 	public function generate($year = '', $month = '', $event = array(), $data = array())
 	{	
-		
-		if (!$event) {
+		// If no event are passed AND an event session is avaiable then we use the data stored in the session
+		if (!$event and session()->has('event')) {
 			$event = session()->get('event');
 		}else{
 			session()->put('event', $event);
 		}
-		
-		
-		
+
 		$today = Carbon::now();
 		
+
+		//Initialisation of the month and the year of the calendar
 		if ($month == '') {
 			$month = $today->month;
 		}
