@@ -2,7 +2,7 @@
 
 Install the package through [Composer](http://getcomposer.org/) :
 
-	composer require arkhas/calendar:dev-master
+	composer require arkhas/laravel5calendar:dev-master
 
 
 

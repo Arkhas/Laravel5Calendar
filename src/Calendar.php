@@ -43,10 +43,10 @@ class Calendar
 		// Calculation of the number of week in month (go to the end of the month and get the week of the month)
 		$weeksInMonth 	= $current_month->copy()->endOfMonth()->weekOfMonth;
 		
-		$calendar['current_month'] 		= $current_month;
-		$calendar['previous_month_url'] = $previous_month->year."/".$previous_month->month;
-		$calendar['next_month_url'] 	= $next_month->year."/".$next_month->month;
-		$calendar['today'] 				= $today;
+		$calendar['current_month']		= $current_month;
+		$calendar['previous_month_url']	= $previous_month->year."/".$previous_month->month;
+		$calendar['next_month_url']		= $next_month->year."/".$next_month->month;
+		$calendar['today']				= $today;
 		
 		// We get the first day of the week (default is Sunday so we substract a day to have the previous monday)
 		$day = $current_month->copy()->startOfMonth()->startOfWeek()->subDay(1);
