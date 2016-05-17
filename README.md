@@ -61,6 +61,12 @@ $data = array(
 
 $calendar = Calendar::generate(2016, 5, $events, $data);
 ```
+
+For using it in you view, simply use :
+```php
+{!! $calendar !!}
+```
+
 ## Routing
 
 By default, the routing format is `/calendar/YYYY/MM` , you can change the leading route using the url data parameter :

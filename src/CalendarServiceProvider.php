@@ -15,7 +15,7 @@ class CalendarServiceProvider extends ServiceProvider
     {
         // Get namespace
         $nameSpace = $this->app->getNamespace();
-        
+
         $this->loadViewsFrom(__DIR__.'/views', 'calendar');
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/vendor/calendar'),
@@ -32,7 +32,8 @@ class CalendarServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        include __DIR__.'/routes.php';
+        $this->app->make('Arkhas\Calendar\CalendarController');
         $this->app['calendar'] = $this->app->share(function($app)
         {
             return new Calendar();
