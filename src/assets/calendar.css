@@ -16,7 +16,8 @@
 
 .calendar {
   text-align: center;
-  width: 506px;
+  display: table;
+  margin:auto;
   font-family: 'Lato', sans-serif;
   height: 538px;
 }
@@ -41,7 +42,7 @@
   color: #7c8a95;
 }
 
-.calendar tbody td a:hover {
+.calendar tbody td a:hover,.calendar tbody td a.after  {
   border: 2px solid #00addf;
 }
 
@@ -98,16 +99,16 @@
 
 .btn-prev,
 .btn-next {
-  border: 2px solid #cbd1d2;
-  border-radius: 50%;
-  color: #cbd1d2;
-  height: 2em;
-  font-size: .75em;
-  line-height: 2em;
-  margin: -1em;
-  position: absolute;
-  top: 50%;
-  width: 2em;
+    border: 2px solid #cbd1d2;
+    border-radius: 50%;
+    color: #cbd1d2;
+    height: 20px;
+    font-size: 15px;
+    line-height: 15px;
+    margin: -10px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
 }
 
 .btn-prev:hover,

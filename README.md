@@ -84,7 +84,7 @@ The template is located in `resources/views/vendor/calendar/calendar.blade.php`
 
 The css file is located in `public/assets/arkhas/calendar/calendar.css`
 
-## Navigate threw the calendar
+## Navigate through the calendar
 
 Add this to your template
 
@@ -94,8 +94,8 @@ Add this to your template
 
 ```
 
-Navigate threw the calendar with links using the `calendarButton` Class.
-The ajax script will replace the `calendar` class by a new calendar.
+Navigate through the calendar with links using the `calendarButton` Class.
+The ajax script will replace the `calendar` class by an updated calendar.
 
 For more information about how it work, you can navigate to `/arkhas/demo` and see the template in `ressources/views/vendor/calendar/demo.blade.php`
 

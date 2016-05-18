@@ -1,11 +1,11 @@
 {
     "name": "arkhas/laravel5calendar",
-    "description": "A calendar package for laravel 5 using Carbon and Blade templating",
+    "description": "A calendar with event managment package for laravel 5 using Carbon and Blade templating",
     "license": "MIT",
     "authors": [
         {
             "name": "Arkhas",
-            "email": "pub@arkhas.fr"
+            "email": "git@arkhas.fr"
         }
     ],
     "require": {},
