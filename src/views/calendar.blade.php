@@ -2,7 +2,7 @@
 	<table>
 		<header>
 			<a class="btn-prev fontawesome-angle-left calendarButton" href="{{ $data['url'] }}{{ $calendar['previous_month_url'] }}"></a>
-			<h2>{{ $calendar['current_month']->format('M Y') }}</h2>
+			<a href="{{ $data['url'] }}{{ $calendar['current_month_url'] }}" title=""><h2>{{ $calendar['current_month']->format('M Y') }}</h2></a>
 			<a class="btn-next fontawesome-angle-right calendarButton" href="{{ $data['url'] }}{{ $calendar['next_month_url'] }}"></a>
 		</header>
 		<tr>

@@ -54,7 +54,9 @@ class Calendar
 		$weeksInMonth 	= $current_month->copy()->endOfMonth()->weekOfMonth;
 		
 		$calendar['current_month']		= $current_month;
+		$calendar['current_month_url']	= $current_month->year."/".$current_month->month;
 		$calendar['previous_month_url']	= $previous_month->year."/".$previous_month->month;
+
 		$calendar['next_month_url']		= $next_month->year."/".$next_month->month;
 		$calendar['today']				= $today;
 		

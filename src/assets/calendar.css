@@ -19,10 +19,11 @@
   display: table;
   margin:auto;
   font-family: 'Lato', sans-serif;
-  height: 538px;
+  font-size: 14px;
 }
 .calendar a{
    text-decoration: none;
+   color: inherit;
 }
 
 .calendar header {
@@ -31,6 +32,7 @@
 
 .calendar h2 {
   text-transform: uppercase;
+  font-size: 1.5em !important;
 }
 
 .calendar thead {
@@ -42,7 +44,7 @@
   color: #7c8a95;
 }
 
-.calendar tbody td a:hover,.calendar tbody td a.after  {
+.calendar tbody td a:hover,.calendar tbody td a.selected  {
   border: 2px solid #00addf;
 }
 
@@ -50,10 +52,10 @@
   border: 2px solid transparent;
   border-radius: 50%;
   display: inline-block;
-  height: 64px;
-  line-height:  64px;
+  height: 3.5em;
+  width:  3.5em;
+  line-height:  3.5em;
   text-align: center;
-  width:  64px;
   cursor: pointer;
   position: relative;
   color: inherit;
@@ -78,7 +80,7 @@
 .calendar table a.event:after {
   background: #00addf;
   border-radius: 50%;
-  bottom: 10px;
+  top: 85%;
   display: block;
   content: '';
   height: .5em;
@@ -101,14 +103,14 @@
 .btn-next {
     border: 2px solid #cbd1d2;
     border-radius: 50%;
-    color: #cbd1d2;
-    height: 20px;
-    font-size: 15px;
-    line-height: 15px;
-    margin: -10px;
+    color: #cbd1d2 !important;
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    line-height: 2em;
+    margin: -0.9em -0.6em;
     position: absolute;
     top: 50%;
-    width: 20px;
 }
 
 .btn-prev:hover,
