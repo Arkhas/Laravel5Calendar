@@ -27,7 +27,7 @@ class Calendar
     public function generate($year = '', $month = '', $event = [], $data = [])
     {
         // If no event are passed AND an event session is avaiable then we use the data stored in the session
-        if (!$event and session()->has('event')) {
+        if (! $event and session()->has('event')) {
             $event = session()->get('event');
         } else {
             session()->put('event', $event);
@@ -85,7 +85,7 @@ class Calendar
             }
         }
         // dd($data);
-        if (!isset($data['url'])) {
+        if (! isset($data['url'])) {
             $data['url'] = $this->url;
         }
 

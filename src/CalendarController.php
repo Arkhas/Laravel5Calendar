@@ -2,9 +2,9 @@
 
 namespace Arkhas\Calendar;
 
-use App\Http\Controllers\Controller;
 use Calendar;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class CalendarController extends Controller
 {
