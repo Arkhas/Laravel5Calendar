@@ -31,10 +31,8 @@ class CalendarServiceProvider extends ServiceProvider
     {
         include __DIR__.'/routes.php';
         $this->app->make('Arkhas\Calendar\CalendarController');
-        $this->app['calendar'] = $this->app->share(function($app)
-        {
+        $this->app['calendar'] = $this->app->share(function ($app) {
             return new Calendar();
         });
     }
-
 }
