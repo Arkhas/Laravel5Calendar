@@ -47,5 +47,4 @@ class CalendarTest extends TestCase
         $this->assertEquals($year.'/'. 10, $calendarData->calendar['next_month_url']);
         $this->assertEquals('/testURL/', $calendarData->data['url']);
     }
-
 }
