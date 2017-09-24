@@ -26,6 +26,16 @@ class Calendar
      */
     public function generate($year = '', $month = '', $event = [], $data = [])
     {
+
+        $calendarData = $this->setupCalendar($year, $month, $event, $data);
+        $calendar = $calendarData->calendar;
+        $data = $calendarData->data;
+        
+        return view('calendar::calendar', compact('calendar', 'data'));
+    }
+
+    public function setupCalendar($year = '', $month = '', $event = [], $data = [])
+    {
         // If no event are passed AND an event session is avaiable then we use the data stored in the session
         if (! $event and session()->has('event')) {
             $event = session()->get('event');
@@ -89,6 +99,10 @@ class Calendar
             $data['url'] = $this->url;
         }
 
-        return view('calendar::calendar', compact('calendar', 'data'));
+        $calendarData = new \stdClass();
+        $calendarData->data = $data;
+        $calendarData->calendar = $calendar;
+
+        return $calendarData;
     }
 }
