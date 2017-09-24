@@ -23,9 +23,9 @@ class CalendarTest extends TestCase
 
         $this->assertEquals($todaysMonth, $calendarData->calendar['current_month']->month);
         $this->assertEquals($todaysDay, $calendarData->calendar['today']->day);
-        $this->assertEquals($todaysYear.'/'. $todaysMonth , $calendarData->calendar['current_month_url']);
-        $this->assertEquals($todaysYear.'/'. $lastMonth, $calendarData->calendar['previous_month_url']);
-        $this->assertEquals($todaysYear.'/'. $nextMonth, $calendarData->calendar['next_month_url']);
+        $this->assertEquals($todaysYear.'/'.$todaysMonth , $calendarData->calendar['current_month_url']);
+        $this->assertEquals($todaysYear.'/'.$lastMonth, $calendarData->calendar['previous_month_url']);
+        $this->assertEquals($todaysYear.'/'.$nextMonth, $calendarData->calendar['next_month_url']);
         $this->assertEquals(' highlight', $calendarData->calendar['weeks'][$today->weekOfMonth - 1][$today->day]['class']);
         $this->assertEquals('/calendar/', $calendarData->data['url']);
     }
