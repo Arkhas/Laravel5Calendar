@@ -26,11 +26,10 @@ class Calendar
      */
     public function generate($year = '', $month = '', $event = [], $data = [])
     {
-
         $calendarData = $this->setupCalendar($year, $month, $event, $data);
         $calendar = $calendarData->calendar;
         $data = $calendarData->data;
-        
+
         return view('calendar::calendar', compact('calendar', 'data'));
     }
 
