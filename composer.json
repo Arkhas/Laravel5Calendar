@@ -8,9 +8,7 @@
             "email": "git@arkhas.fr"
         }
     ],
-    "require": {
-        "laravel/framework": "^5.5"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Arkhas\\Calendar\\": "src/"
@@ -22,6 +20,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.3"
+        "phpunit/phpunit": "^6.3",
+        "orchestra/testbench": "~3.0"
     }
 }
