@@ -16,12 +16,14 @@ class CalendarTest extends TestCase
 
         $todaysMonth = date('n');
         $todaysYear = date('Y');
+        $todaysDay = date('j');
         $today = Carbon::now();
 
         $lastMonth = date('n', strtotime('-1 month'));
         $nextMonth = date('n', strtotime('+1 month'));
 
         $this->assertEquals($todaysMonth, $calendarData->calendar['current_month']->month);
+        $this->assertEquals($todaysDay, $calendarData->calendar['today']->day);
         $this->assertEquals($todaysYear . '/'. $todaysMonth , $calendarData->calendar['current_month_url']);
         $this->assertEquals($todaysYear . '/' . $lastMonth, $calendarData->calendar['previous_month_url']);
         $this->assertEquals($todaysYear . '/' . $nextMonth, $calendarData->calendar['next_month_url']);
