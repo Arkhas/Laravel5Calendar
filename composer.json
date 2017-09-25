@@ -13,5 +13,14 @@
         "psr-4": {
             "Arkhas\\Calendar\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arkhas\\Calendar\\Test\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "orchestra/testbench": "~3.0"
     }
 }
