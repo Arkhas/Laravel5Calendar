@@ -1,3 +1,5 @@
+###This is the branch for LaravelVersion prior to 5.5
+
 ## Installation
 
 Install the package through [Composer](http://getcomposer.org/) :
