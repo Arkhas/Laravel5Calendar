@@ -22,5 +22,15 @@
     "require-dev": {
         "phpunit/phpunit": "^6.3",
         "orchestra/testbench": "~3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arkhas\\Calendar\\CalendarServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "Arkhas\\Calendar\\Facades\\Calendar"
+            }
+        }
     }
 }
