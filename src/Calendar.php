@@ -52,7 +52,7 @@ class Calendar
             $year = $today->year;
         }
 
-        $current_month = Carbon::createFromDate($year, $month);
+        $current_month = Carbon::createFromDate($year, $month, 1);
         $previous_month = $current_month->copy()->subMonth();
         $next_month = $current_month->copy()->addMonth();
 
