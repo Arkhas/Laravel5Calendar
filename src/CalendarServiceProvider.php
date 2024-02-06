@@ -18,7 +18,7 @@ class CalendarServiceProvider extends ServiceProvider
             __DIR__.'/views' => base_path('resources/views/vendor/calendar'),
         ]);
         $this->publishes([
-             __DIR__.'/assets' => public_path('assets/arkhas/calendar'),
+            __DIR__.'/assets' => public_path('assets/arkhas/calendar'),
         ], 'public');
     }
 

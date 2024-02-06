@@ -21,7 +21,6 @@ class Calendar
      * @param	int	the month
      * @param	array	the event to be shown in the calendar
      * @param	array	the additional data to be shown in the view
-     *
      * @return string
      */
     public function generate($year = '', $month = '', $event = [], $data = [])
