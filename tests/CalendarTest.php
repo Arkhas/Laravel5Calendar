@@ -2,8 +2,8 @@
 
 namespace Arkhas\Calendar\Test;
 
-use Carbon\Carbon;
 use Arkhas\Calendar\Calendar;
+use Carbon\Carbon;
 use Orchestra\Testbench\TestCase;
 
 class CalendarTest extends TestCase
